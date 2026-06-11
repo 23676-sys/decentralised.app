@@ -12,7 +12,7 @@ def num_check(question):
             print("Please enter a valid integer.")
 
 # main routine goes here`
-tickets_sold = 0 `
+tickets_sold = 0 
 while True: 
 
     name = input("Enter your name / xxx to quit: ")
@@ -24,7 +24,7 @@ while True:
 
     if 12 <= age <= 120: 
         pass
-    elif age. < 12:
+    elif age < 12:
         print("Sorry you are too young for this movie")
         continue
     else: 
@@ -33,4 +33,5 @@ while True:
 
     tickets_sold += 1
 
-print("You have sold {} tickets."format(tickets_sold))
+print("You have sold {} tickets.".format(tickets_sold))
+
