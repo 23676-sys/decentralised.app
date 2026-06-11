@@ -1,23 +1,20 @@
 # function goes here
 
-# Checks that user response is not blank
+# cehcks that user response is not blank
 def not_blank(question):
-
-    while True: 
+    
+    while True:
         response = input(question)
 
-
-        # if the response is blank, outputs error
         if response == "":
-            print("Sorry this can't be blank. Please try again")
+            print("Sorry, this can't be blank. Please enter your name.")
         else:
             return response
         
-
 # main routine goes here
-while True:
-    name = not_blank("Enter your name (or 'xxx' to quit) ")
-    if name == "xxx":
+while True: 
+    name = not_blank("Please enter your name (or 'xxx' to quit) ")
+    if name == 'xxx':
         break
-print("We are done")
 
+    print("We are done")
