@@ -40,12 +40,29 @@ def num_check(question):
             print("Please enter a valid integer.")
 
 
+# Calculate the ticket price based on the age
+def calculate_ticket_price(var_age):
+
+    # ticket is $7.50 for users under 15
+    if var_age < 16:
+        price = 7.5
+  
+    # ticket is $10.50 for users between 16 and 64 
+    elif var_age < 65:
+        price = 10.5
+    
+    # ticket is $6.50 for seniors (65+)
+    else:
+        price = 6.5
+
+    return price
 
 # main routine starts here 
 
 # set maximum number of tickets below
 MAX_TICKETS = 3
 tickets_sold = 0 
+
 # Ask user if they want to read instructions
 want_instructions = yes_no("Do you want to read these insturctions? ").lower
 
